@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'crypto/encrypt'
-
-  get 'crypto/decrypt'
+  get 'encrypt', to: 'crypto#encrypt'
+  get 'decrypt', to: 'crypto#decrypt'
 
   root to: 'pages#index'
 
